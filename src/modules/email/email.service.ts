@@ -6,6 +6,11 @@ import { EmailDto } from './dto/email.dto';
 export class EmailService {
   private resend = new Resend(process.env.RESEND_API_KEY);
 
+  async sendEmails(data: EmailDto) {
+    await this.sendReservationEmail(data);
+    await this.sendCustomerConfirmation(data);
+  }
+
   async sendReservationEmail(data: EmailDto) {
     console.log('Enviando email con los siguientes datos:', data);
     console.log('Fechas recibidas:', data.fechas);

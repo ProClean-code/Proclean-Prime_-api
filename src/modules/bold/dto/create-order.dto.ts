@@ -1,4 +1,5 @@
-import { IsArray, IsEmail, IsString } from 'class-validator';
+import { IsArray, IsEmail, IsObject, IsString } from 'class-validator';
+import { ReservationDataDto } from './reservation-data.dto';
 
 export class CreateOrderDto {
   @IsString()
@@ -16,5 +17,6 @@ export class CreateOrderDto {
   @IsString()
   planServicio!: string;
 
-  reservationData!: Record<string, unknown>;
+  @IsObject()
+  reservationData!: ReservationDataDto;
 }
