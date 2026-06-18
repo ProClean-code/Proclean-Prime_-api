@@ -131,8 +131,8 @@ export class EmailService {
                   <div class="section-title">✨ Detalles del Servicio</div>
                   <div class="field-group">
                     <div class="field">
-                      <div class="field-label">Tipo de Servicio</div>
-                      <div class="field-value">${data.tipoServicio}</div>
+                      <div class="field-label">Plan de Servicio</div>
+                      <div class="field-value">${data.planServicio}</div>
                     </div>
                     <div class="field">
                       <div class="field-label">Hora Preferida</div>
@@ -257,8 +257,8 @@ export class EmailService {
                     <div class="summary-value">${data.celular}</div>
                   </div>
                   <div class="summary-item">
-                    <div class="summary-label">Tipo de Servicio:</div>
-                    <div class="summary-value">${data.tipoServicio}</div>
+                    <div class="summary-label">Plan de Servicio:</div>
+                    <div class="summary-value">${data.planServicio}</div>
                   </div>
                   <div class="summary-item">
                     <div class="summary-label">Fechas:</div>

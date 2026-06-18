@@ -10,7 +10,7 @@ export class EmailDto {
   tipoDocumento!: string;
   numeroDocumento!: string;
   referido!: string | null;
-  tipoServicio!: string;
+  planServicio!: string;
   requerimientos!: string | null;
   fechas!: string[];
   hora!: string;
