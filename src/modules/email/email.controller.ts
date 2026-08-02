@@ -18,6 +18,7 @@ export class EmailController {
     try {
       await this.emailService.sendCustomerConfirmation(emailDto);
       console.log('Email de confirmación enviado al cliente:', emailDto.correo);
+      console.log('Detalles de la reserva:', emailDto.planServicio);
     } catch (error) {
       console.error(
         'Error al enviar el email de confirmación al cliente:',
